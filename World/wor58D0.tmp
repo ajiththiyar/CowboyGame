@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://besuhsvhbd00y"]
+
+[ext_resource type="PackedScene" uid="uid://glmhjd5py3ya" path="res://Enemies/Bandit/bandit.tscn" id="1_w6wni"]
+[ext_resource type="PackedScene" uid="uid://helsxhwjm8ky" path="res://Player/cowboy.tscn" id="2_xk341"]
+[ext_resource type="PackedScene" uid="uid://d0veujvachdq" path="res://Enemies/Slinger/slinger.tscn" id="3_5aty3"]
+
+[node name="World" type="Node2D"]
+
+[node name="Bandit" parent="." node_paths=PackedStringArray("cowboy") instance=ExtResource("1_w6wni")]
+position = Vector2(404, 257)
+cowboy = NodePath("../Cowboy")
+SPEED = 30
+
+[node name="Cowboy" parent="." instance=ExtResource("2_xk341")]
+position = Vector2(330, 180)
+
+[node name="Slinger" parent="." node_paths=PackedStringArray("cowboy") instance=ExtResource("3_5aty3")]
+position = Vector2(-83, -57)
+cowboy = NodePath("../Cowboy")

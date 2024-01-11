@@ -1,0 +1,14 @@
+res://Player/bullet.tscn
+res://Bullet.gd
+res://Enemies/Bandit/bandit.tscn
+res://World/world.tscn
+res://Enemies/Slinger/slinger.tscn
+res://Enemies/Slinger/curve_bullet.tscn
+res://Player/cowboy.tscn
+res://Enemies/Bandit/bandit.gd
+res://States/Walk.gd
+res://Player/cowboy.gd
+res://World/Enemy.gd
+res://World/WaveSpawner.gd
+res://Enemies/Slinger/slinger.gd
+res://States/Dash.gd

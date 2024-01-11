@@ -1,0 +1,14 @@
+Node
+Marker2D
+Camera2D
+TileMap
+CollisionShape2D
+Area2D
+AnimationPlayer
+Sprite2D
+ReferenceRect
+Container
+ColorRect
+AnimationTree
+CharacterBody2D
+AnimatedSprite2D

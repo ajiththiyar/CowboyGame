@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704962347
-Bullet.gd::GDScript::-1::1704962101::0::1::::<>Node2D<>::
-CurveBullet.gd::GDScript::-1::1704962101::0::1::::<>Area2D<>::
+::res://::1704972909
+Bullet.gd::GDScript::-1::1704962546::0::1::::<>Node2D<>::
+CurveBullet.gd::GDScript::-1::1704962487::0::1::::<>Area2D<>::
 icon.svg::CompressedTexture2D::8079949253065004394::1704431407::1704431413::1::::<><>::
 README.md::TextFile::-1::1704723780::0::1::::<><>::
 README.ru.md::TextFile::-1::1704723780::0::1::::<><>::
@@ -20,23 +20,24 @@ houses mountains.png::CompressedTexture2D::4698612238569005311::1704874859::1704
 peoples buildings other.png::CompressedTexture2D::469934184455820683::1704874859::1704874859::1::::<><>::
 Plants and fences.png::CompressedTexture2D::7916915887344643746::1704874859::1704874859::1::::<><>::
 ::res://Enemies/::1704802959
-::res://Enemies/Bandit/::1704962277
+::res://Enemies/Bandit/::1704963837
 bandit.gd::GDScript::-1::1704962101::0::1::::<>CharacterBody2D<>::
-bandit.tscn::PackedScene::444582800322032464::1704962277::0::1::::<><>::uid://dfh5iw0a1xwto::::res://Assets/bandit.png<>res://Enemies/Bandit/bandit.gd
-::res://Enemies/Slinger/::1704962278
-curve_bullet.tscn::PackedScene::8824825517936952674::1704962278::0::1::::<><>::res://CurveBullet.gd<>uid://cv8bacdr5ddj8::::res://Assets/slinger.png
-slinger.gd::GDScript::-1::1704962101::0::1::::<>CharacterBody2D<>::
-slinger.tscn::PackedScene::263459240113780226::1704962278::0::1::::<><>::res://Enemies/Slinger/slinger.gd<>uid://cv8bacdr5ddj8::::res://Assets/slinger.png
-::res://Player/::1704962278
-bullet.tscn::PackedScene::297269145561881254::1704962278::0::1::::<><>::res://Bullet.gd<>uid://bv8lv3dyroaqp::::res://Assets/bullet.png<>uid://dv2ihey8xa6jm::::res://Assets/bulletfinal.png<>uid://bkqyvvohl8apy::::res://Assets/blood.png
+bandit.tscn::PackedScene::444582800322032464::1704963837::0::1::::<><>::uid://dfh5iw0a1xwto::::res://Assets/bandit.png<>res://Enemies/Bandit/bandit.gd
+::res://Enemies/Slinger/::1704963885
+curve_bullet.tscn::PackedScene::8824825517936952674::1704963839::0::1::::<><>::res://CurveBullet.gd<>uid://cv8bacdr5ddj8::::res://Assets/slinger.png
+slinger.gd::GDScript::-1::1704963885::0::1::::<>CharacterBody2D<>::
+slinger.tscn::PackedScene::263459240113780226::1704963885::0::1::::<><>::res://Enemies/Slinger/slinger.gd<>uid://cv8bacdr5ddj8::::res://Assets/slinger.png
+::res://Player/::1704963839
+bullet.tscn::PackedScene::297269145561881254::1704963839::0::1::::<><>::res://Bullet.gd<>uid://bv8lv3dyroaqp::::res://Assets/bullet.png<>uid://dv2ihey8xa6jm::::res://Assets/bulletfinal.png<>uid://bkqyvvohl8apy::::res://Assets/blood.png
 cowboy.gd::GDScript::-1::1704882218::0::1::::<>CharacterBody2D<>::
-cowboy.tscn::PackedScene::500280667555985760::1704962278::0::1::::<><>::res://Player/cowboy.gd<>uid://c2rift1ay0nc7::::res://Assets/cowboyIdle.png<>uid://cq7vt114friu5::::res://Assets/cowboyWalk.png<>res://States/StateMachine.gd<>uid://codps8tr6gao6::::res://Assets/cowboyFire.png<>uid://cgrs3cak4we6k::::res://Assets/cowboyWalkshoot.png<>res://States/Walk.gd<>res://States/Dash.gd<>uid://cpiwhcouunda0::::res://Assets/dash.png
-::res://States/::1704962101
+cowboy.tscn::PackedScene::500280667555985760::1704963839::0::1::::<><>::res://Player/cowboy.gd<>uid://c2rift1ay0nc7::::res://Assets/cowboyIdle.png<>uid://cq7vt114friu5::::res://Assets/cowboyWalk.png<>res://States/StateMachine.gd<>uid://codps8tr6gao6::::res://Assets/cowboyFire.png<>uid://cgrs3cak4we6k::::res://Assets/cowboyWalkshoot.png<>res://States/Walk.gd<>res://States/Dash.gd<>uid://cpiwhcouunda0::::res://Assets/dash.png
+::res://States/::1704962797
 Dash.gd::GDScript::-1::1704962101::0::1::::Dash<>State<>::
 State.gd::GDScript::-1::1704362100::0::1::::State<>Node<>::
 StateMachine.gd::GDScript::-1::1704359463::0::1::::State_Machine<>Node<>::
-Walk.gd::GDScript::-1::1704962101::0::1::::Walk<>State<>::
-::res://World/::1704962278
+Walk.gd::GDScript::-1::1704962797::0::1::::Walk<>State<>::
+::res://World/::1704963838
 Enemy.gd::GDScript::-1::1704884224::0::1::::Enemy<>Node<>::
-WaveSpawner.gd::GDScript::-1::1704962101::0::1::::WaveSpawner<>Node<>::
-world.tscn::PackedScene::2705562676411697430::1704962278::0::1::::<><>::uid://b77bpsnumc21p::::res://Assets/Tileset/houses mountains.png<>uid://gxv0n7hy3rah::::res://Assets/Tileset/peoples buildings other.png<>uid://helsxhwjm8ky::::res://Player/cowboy.tscn<>uid://dk2aph40nufne::::res://Assets/Tileset/Plants and fences.png<>res://World/WaveSpawner.gd
+spawntimer.gd::GDScript::-1::1704963081::0::1::::<>Marker2D<>::
+WaveSpawner.gd::GDScript::-1::1704963528::0::1::::WaveSpawner<>Node<>::
+world.tscn::PackedScene::2705562676411697430::1704963838::0::1::::<><>::uid://b77bpsnumc21p::::res://Assets/Tileset/houses mountains.png<>uid://gxv0n7hy3rah::::res://Assets/Tileset/peoples buildings other.png<>uid://helsxhwjm8ky::::res://Player/cowboy.tscn<>uid://dk2aph40nufne::::res://Assets/Tileset/Plants and fences.png<>res://World/spawntimer.gd<>res://World/WaveSpawner.gd

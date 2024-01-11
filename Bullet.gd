@@ -5,6 +5,7 @@ var direction:Vector2
 var speed:float =1000
 @onready var animation_player = $AnimationPlayer
 var alive = true
+@onready var collision_shape_2d = $Hitbox/CollisionShape2D
 
 func _ready():
 	animation_player.play("fire")
@@ -31,6 +32,7 @@ func _on_hitbox_body_entered(body):
 		body.queue_free()
 		alive = false
 		animation_player.play("blood")
+		self.get_node("Hitbox").queue_free()
 		await animation_player.animation_finished
 		if self != null:
 			queue_free()

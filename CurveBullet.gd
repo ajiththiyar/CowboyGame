@@ -19,6 +19,8 @@ func _ready():
 func _physics_process(delta):
 	position = bezier(time)
 	time+=delta
+	if time> 10:
+		self.queue_free()
 
 
 func _on_hit_box_body_entered(body):

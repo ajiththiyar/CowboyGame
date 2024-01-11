@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://glmhjd5py3ya"]
+[gd_scene load_steps=27 format=3 uid="uid://glmhjd5py3ya"]
 
 [ext_resource type="Texture2D" uid="uid://dfh5iw0a1xwto" path="res://Assets/bandit.png" id="1_dxc06"]
 [ext_resource type="Script" path="res://Enemies/Bandit/bandit.gd" id="1_vgls3"]
@@ -590,9 +590,13 @@ tracks/4/keys = {
 "values": [14, 14, 15, 16, 17, 20]
 }
 
+[sub_resource type="Animation" id="Animation_d4g4p"]
+resource_name = "blood"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jbr3d"]
 _data = {
 "RESET": SubResource("Animation_nyjos"),
+"blood": SubResource("Animation_d4g4p"),
 "walkb": SubResource("Animation_uxgtk"),
 "walkbl": SubResource("Animation_xb8mn"),
 "walkbr": SubResource("Animation_7rqfw"),
@@ -665,7 +669,8 @@ script = ExtResource("1_vgls3")
 shape = SubResource("CapsuleShape2D_45o8f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.59375, 1.5)
+position = Vector2(1, 9.53674e-07)
+scale = Vector2(2.32813, 2.125)
 texture = ExtResource("1_dxc06")
 hframes = 42
 

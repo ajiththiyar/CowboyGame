@@ -1,12 +1,12 @@
-res://Enemies/Slinger/curve_bullet.tscn
-res://CurveBullet.gd
-res://Bullet.gd
-res://States/Walk.gd
 res://Enemies/Bandit/bandit.tscn
 res://World/world.tscn
 res://Enemies/Slinger/slinger.tscn
+res://Enemies/Slinger/curve_bullet.tscn
 res://Player/bullet.tscn
 res://Player/cowboy.tscn
-res://World/spawntimer.gd
+res://States/Walk.gd
 res://World/WaveSpawner.gd
 res://Enemies/Slinger/slinger.gd
+res://Bullet.gd
+res://Enemies/Bandit/bandit.gd
+res://CurveBullet.gd

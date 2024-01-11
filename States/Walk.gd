@@ -22,7 +22,7 @@ func ENTER():
 	animation_tree.active = true
 	set_physics_process(true)
 	add_child(dashCooldown)
-	dashCooldown.wait_time = 2.0
+	dashCooldown.wait_time = 0.6
 	dashCooldown.connect("timeout", on_timer_timeout)
 	collision_shape_2d.disabled = false
 	

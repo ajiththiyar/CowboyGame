@@ -7,7 +7,6 @@ var direction = Vector2.ZERO
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for child in get_tree().root.get_node("World").get_children():
-		print(child.name)
 		if child.name == "Cowboy":
 			cowboy = child
 

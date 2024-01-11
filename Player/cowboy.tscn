@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cpiwhcouunda0" path="res://Assets/dash.png" id="6_aq21f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4hei2"]
-radius = 8.0
+radius = 10.0499
 
 [sub_resource type="Animation" id="Animation_8nrjl"]
 length = 0.001
@@ -1727,7 +1727,8 @@ script = ExtResource("1_3ao5f")
 speed = 300
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.25, 1.27778)
+position = Vector2(-0.999999, 4.76837e-07)
+scale = Vector2(1.625, 1.69445)
 texture = ExtResource("1_r2ebo")
 hframes = 16
 

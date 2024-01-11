@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var animation_player = $AnimationPlayer
 
 @onready var animation_tree = $AnimationTree
 var cowboy: CharacterBody2D
@@ -36,7 +37,7 @@ func movement():
 	var distance = position.distance_to(cowboy.position)
 	if distance < 300.0:
 		velocity = Vector2.ZERO
-		animation_tree["parameters/blend_position"] = prevDirection
+		animation_tree["parameters/blend_position"] = direction
 		if nextsling:
 			slingerTimer.start()
 			nextsling = false
@@ -47,6 +48,8 @@ func movement():
 
 func fire_bullet():
 	var pos = pivot_area.global_position + Vector2(randf() * pivot_area.size.x, randf() * pivot_area.size.y)
+	if sling != null:
+		sling.queue_free()
 	sling = curve_bullet.instantiate()
 	sling.p0 = sling_position.global_position
 	sling.p1 = pos

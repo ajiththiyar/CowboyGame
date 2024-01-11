@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cv8bacdr5ddj8" path="res://Assets/slinger.png" id="1_mpr15"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t5bgb"]
+radius = 19.0263
 
 [sub_resource type="Animation" id="Animation_41sea"]
 length = 0.001
@@ -864,14 +865,17 @@ blend_mode = 1
 script = ExtResource("1_2e4m5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -1)
+scale = Vector2(1.46875, 1.53125)
 texture = ExtResource("1_mpr15")
 hframes = 24
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(-5, 2)
 shape = SubResource("CircleShape2D_t5bgb")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+active = false
 libraries = {
 "": SubResource("AnimationLibrary_wyh1x")
 }

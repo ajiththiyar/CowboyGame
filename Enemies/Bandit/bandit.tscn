@@ -4,7 +4,8 @@
 [ext_resource type="Script" path="res://Enemies/Bandit/bandit.gd" id="1_vgls3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_45o8f"]
-height = 26.0
+radius = 15.0
+height = 38.0
 
 [sub_resource type="Animation" id="Animation_nyjos"]
 length = 0.001
@@ -654,8 +655,8 @@ states/move/position = Vector2(572, 77)
 transitions = ["Start", "move", SubResource("AnimationNodeStateMachineTransition_4u0mx")]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1xfmt"]
-radius = 17.0
-height = 34.0
+radius = 18.0
+height = 40.0
 
 [node name="Bandit" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_vgls3")
@@ -664,6 +665,7 @@ script = ExtResource("1_vgls3")
 shape = SubResource("CapsuleShape2D_45o8f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.59375, 1.5)
 texture = ExtResource("1_dxc06")
 hframes = 42
 
@@ -683,6 +685,7 @@ parameters/move/blend_position = Vector2(0, 0)
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="HitboxArea" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(1, -1)
 shape = SubResource("CapsuleShape2D_1xfmt")
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

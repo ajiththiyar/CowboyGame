@@ -19,11 +19,17 @@ func _process(delta):
 		var enemy: Enemy = getRandomEnemy()
 		
 		if enemy.strength <= currentDifficulty:
-			currentDifficulty -= enemy.strength
 			var spawn = getSpawn()
-			var e = enemy.enemy.instantiate()
-			e.position = spawn.global_position
-			get_node("Enemies").add_child(e)
+			if spawn.canspawn:
+				spawn.canspawn = false
+				spawn.timer.start()
+				currentDifficulty -= enemy.strength
+				var e = enemy.enemy.instantiate()
+				e.position = spawn.global_position
+				get_node("Enemies").add_child(e)
+
+	if currentDifficulty == 0 and get_node("Enemies").get_child_count() == 0:
+		currentDifficulty = Difficulty + increasedDifficulty
 			
 
 func getSpawn():

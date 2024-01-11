@@ -1,8 +1,6 @@
 class_name Walk
 extends State
 @export var animation_tree: AnimationTree
-var prevDirection:Vector2 = Vector2.RIGHT
-var idle = true
 var fire_allowed = true
 @onready var bullet: PackedScene = preload("res://Player/bullet.tscn")
 @onready var gun = $"../../Gun"
@@ -34,15 +32,12 @@ func on_timer_timeout():
 
 func _physics_process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
-	
 	if direction != Vector2.ZERO:
-		idle = false
+		setPrevDirection(direction)
 		animation_tree["parameters/playback"].travel("movement")
-		animation_tree.set("parameters/movement/blend_position",direction)
+		animation_tree.set("parameters/movement/blend_position",actor.prevDirection)
 		handle_acceleration(direction, delta)
-		actor.prevDirection = direction
 	else:
-		idle = true
 		handle_friction(direction)
 		animation_tree["parameters/playback"].travel("idle")
 		animation_tree.set("parameters/idle/blend_position",actor.prevDirection)
@@ -77,7 +72,10 @@ func fire():
 	bulletInstance.global_rotation = actor.prevDirection.angle() + 90
 	get_viewport().add_child(bulletInstance)
 
-
+func setPrevDirection(direction):
+	if direction.x > 0.7 or direction.x < -0.7 or direction.y > 0.7 or direction.y < -0.7:
+		actor.prevDirection = direction
+		
 func _on_gun_timer_timeout():
 	fire_allowed = true
 

@@ -23,4 +23,5 @@ func _physics_process(delta):
 
 func _on_hit_box_body_entered(body):
 	if body.has_method("player"):
-		body.queue_free()
+		if body != null:
+			body.queue_free()

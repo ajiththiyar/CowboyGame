@@ -22,13 +22,15 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	queue_free()
+	if self != null:
+		queue_free()
 
 
 func _on_hitbox_body_entered(body):
-	if body.is_in_group("enemy"):
+	if body.is_in_group("enemy") and body != null:
 		body.queue_free()
 		alive = false
 		animation_player.play("blood")
 		await animation_player.animation_finished
-		queue_free()
+		if self != null:
+			queue_free()

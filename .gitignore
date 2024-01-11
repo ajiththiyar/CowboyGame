@@ -4,3 +4,5 @@
 !/addons/
 /addons/*
 !/addons/nklbdev.aseprite_importers/
+*.tmp
+*.cfg

@@ -14,6 +14,7 @@ var nextsling = true
 
 
 func _ready():
+	animation_tree.active = true
 	for child in get_tree().root.get_node("World").get_children():
 		if child.name == "Cowboy":
 			cowboy = child
@@ -56,4 +57,5 @@ func fire_bullet():
 	
 func timedout():
 	nextsling = true
-	sling.queue_free()
+	if sling != null:
+		sling.queue_free()

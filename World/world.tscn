@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://besuhsvhbd00y"]
+[gd_scene load_steps=11 format=3 uid="uid://besuhsvhbd00y"]
 
 [ext_resource type="Texture2D" uid="uid://b77bpsnumc21p" path="res://Assets/Tileset/houses mountains.png" id="1_1sd8o"]
 [ext_resource type="Texture2D" uid="uid://gxv0n7hy3rah" path="res://Assets/Tileset/peoples buildings other.png" id="2_16gf4"]
 [ext_resource type="PackedScene" uid="uid://helsxhwjm8ky" path="res://Player/cowboy.tscn" id="2_xk341"]
 [ext_resource type="Texture2D" uid="uid://dk2aph40nufne" path="res://Assets/Tileset/Plants and fences.png" id="3_pjsou"]
+[ext_resource type="Script" path="res://World/spawntimer.gd" id="6_56mmo"]
 [ext_resource type="Script" path="res://World/WaveSpawner.gd" id="7_t0oco"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_paf5f"]
@@ -17258,14 +17259,30 @@ script = ExtResource("7_t0oco")
 
 [node name="spawn1" type="Marker2D" parent="WaveSpawner"]
 position = Vector2(-357, 29)
+script = ExtResource("6_56mmo")
+
+[node name="Timer" type="Timer" parent="WaveSpawner/spawn1"]
+wait_time = 3.0
 
 [node name="spawn2" type="Marker2D" parent="WaveSpawner"]
 position = Vector2(1156, 558)
+script = ExtResource("6_56mmo")
+
+[node name="Timer" type="Timer" parent="WaveSpawner/spawn2"]
+wait_time = 3.0
 
 [node name="spawn3" type="Marker2D" parent="WaveSpawner"]
 position = Vector2(1135, 42)
+script = ExtResource("6_56mmo")
+
+[node name="Timer" type="Timer" parent="WaveSpawner/spawn3"]
+wait_time = 3.0
 
 [node name="spawn4" type="Marker2D" parent="WaveSpawner"]
 position = Vector2(-353, 539)
+script = ExtResource("6_56mmo")
+
+[node name="Timer" type="Timer" parent="WaveSpawner/spawn4"]
+wait_time = 3.0
 
 [node name="Enemies" type="Node" parent="WaveSpawner"]
